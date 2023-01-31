@@ -1,0 +1,145 @@
+body, *,html
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body 
+{
+	overflow-x: hidden;
+}
+.container
+{
+	max-width: 1830px;
+	width: 100%;
+	margin: 0 auto;
+}
+.flex
+{
+	display: flex;
+	gap: 10px;
+}
+.main 
+{
+	background: black;
+	width: 100%;
+	margin:30px auto;
+}
+.main-content{
+	display: flex;
+	padding: 100px 0;
+}
+h2
+{
+	color: #D40404;
+	font-size: 150px;
+}
+
+.box1 .top 
+{
+	position: absolute;
+	left: 170px;
+	top: 160px;
+}
+.box1, .box2
+{
+	position: relative;
+	width: 50%;
+	padding: 50px ;
+}
+.box1 img , .box2 img 
+{
+	height: 300px;
+}
+.box1 p , .box2 p
+{
+	font-size: 15px;
+	color: white;
+	padding-top: 190px;
+	bottom: 0;
+	right: 0;
+	width: 75%;
+}
+.box2 .top 
+{
+	margin-top: 50px;
+}
+.box2 img 
+{
+	z-index: 1;
+}
+.box2 h2 
+{
+	position: absolute;
+	top: 310px;
+	left: 250px;
+}
+.box2 p 
+{
+	padding-top: 0;
+}
+.slick-dots li.slick-active button:before{
+	height: 50px;
+}
+.slider button 
+{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	z-index: 1;
+	border: none
+}
+button.slick-prev.slick-arrow{
+	position: absolute;
+	background: url('../images/left-arrow.svg'),rgba(177, 29, 29, 0.6);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 15%;
+	left: 80%;
+}
+button.slick-next.slick-arrow{
+	position: absolute;
+	background: url('../images/right-arrow.svg'), rgba(177, 29, 29, 0.6);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 15%;
+	left: 85%;
+}
+
+.slick-prev:before
+{
+	display: none;
+}
+.slick-next:before{
+	display: none;
+}
+.slick-dots
+{
+	bottom: -50px !important;
+}
+
+.slick-dots li
+{
+	width: 175px !important;
+}
+.slick-dots li button:before {
+	content: '|' !important;
+    font-family: slick;
+    font-size: 55px !important;
+    line-height: 45px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    text-align: center;
+    opacity: 0.6;
+    color: black;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: red !important;
+    height: 90px;
+    font-size: 75px !important;
+    font-weight: bold;
+}
